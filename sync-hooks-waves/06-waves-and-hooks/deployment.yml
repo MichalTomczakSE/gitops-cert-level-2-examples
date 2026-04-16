@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   annotations:
       argocd.argoproj.io/sync-wave: '20'
-      argocd.argoproj.io/sync-phase: PreSync
+      argocd.argoproj.io/hook: PreSync
   name: simple-deployment
   namespace: example06
 spec:
